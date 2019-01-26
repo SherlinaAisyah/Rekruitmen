@@ -3,42 +3,58 @@
     <head>
         <title>Return </title>
         <script>
-      
-      /*function DeskripsiProduk()
+        window.onload = function()
 {
-                var ItemID = 12341822;
-                var ItemName = "basic t-shirt";
-                Number Price = 70000;
-                var colour =['red','solid black'];
-                var size = ['S,M,L','M,L'];
-                var available1 = (colour[0] + size[0]); 
-                var available2 =(colour[1] + colour[1]);
-                var Freeshiping ="false";
-                ItemID();<br>
-                ItemName();<br>
-                Price();<br>
-                Colour();<br>
-                Freeshiping();
+        var ItemID = Number(12341822);
+        var ItemName = "basic t-shirt";
+        var Price = Number(70000);
+        var colour = ["red" ,"solid black"];
+        var size = ["S,M,L","M,L"];
+        var available1 = colour[0] + " " +size[0]; 
+        var available2 = colour[1] +" " + size[1];
+        var Freeshiping = "false";
+        document.getElementById("ItemId").innerHTML=ItemID;
+        document.getElementById("ItemName").innerHTML=ItemName;
+        document.getElementById("Price").innerHTML=Price;
+        document.getElementById("Price").innerHTML=Price;
+        document.getElementById("Colour1").innerHTML=available1;
+        document.getElementById("Colour2").innerHTML=available2;
+        document.getElementById("Freeshiping").innerHTML=Freeshiping;
+        
 
-                z.value = ItemID + ItemName + Price + colour + size + available1 + available2 +Freeshiping;
-}*/
-function jumlah()
-            {
-                var a = (12341822);
-                
-               if (a ){
-                   alert ("Masukan bilangan yang akan dijumlahkan");
-               }
-                else
-                    {
-                        z.value = a ;
-                    }
-            }
+}
         </script>
     </head>
     <body>
-       <form>
-             <input type="button" value=" Deskripsi Produk " onclick="DeskripsiProduk()" >
-         </form>
+       <table> Detail Produk
+           <tr>
+               <td>ItemId</td>
+               <td id="ItemId"></td>
+           </tr>
+           <tr>
+               <td>ItemName</td>
+               <td id="ItemName"></td>
+           
+           </tr>
+           <tr>
+               <td>Price</td>
+               <td id="Price"></td>
+           
+           </tr>
+           <tr>
+            <td>AvailableColourAndSize =</td>
+           </tr>
+           <tr>
+               <td id="Colour1"></td>
+               <td id="Colour2"></td>
+           </tr>
+           <tr>
+               <td>Freeshiping</td>
+               <td id="Freeshiping"></td>
+           
+           </tr>
+           
+           <tr></tr>
+       </table>
     </body>
 </html>
