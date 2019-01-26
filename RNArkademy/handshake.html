@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handshake </title>
+        <script>
+       function jumlah()
+            {
+                var a = Number(document.getElementById("bil1").value);
+                var z = document.getElementById("hasil");
+                var b = a-1;
+                
+               if (a == 0 || a == 1){
+                   alert ("Masukan Jumlah orang minimal 2");
+               }
+                else if(a=2)
+                    {
+                        z.value = b ;
+                    }
+                  else if (a != 2){
+                        z.value = b + b--;
+                  };
+            }
+            
+        </script>
+    </head>
+    <body>
+       <form>
+           Masukkan Jumlah Orang : <input type="text" id="bil1"><br><br>
+             <input type="button" value=" Banyaknya Handshake " onclick="jumlah()">
+             <input type="text" id="hasil" >
+         </form>
+    </body>
+</html>

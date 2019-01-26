@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</script>
+<script>
+	function isAcceptedUsername(username){
+		var Regex = /^[a]{5}[_.]{1}[A]{2}$/i ;
+		return Regex.test(document.getElementsByTagName('username')) ;
+	}
+	
+	
+	if (isAcceptedUsername("aaaaa_AA")) {
+		alert("Username Is Valid") ;
+	} else {
+		alert("Username Is Invalid") ;
+	}
+</script>
+</head>
+<body>
+	<form action="cek-username.php" method="post">
+	Username : <input placeholder="masukan 5 hurufkecil pertama diikuti _ atau . dan dua huruf besar" id="username" type="text"  name="username" value="">
+	<br>
+</body>
+</html>
+
